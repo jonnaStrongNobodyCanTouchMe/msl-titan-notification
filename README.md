@@ -11,12 +11,12 @@ I love MSL
    Disable ASTC Texture
 3. Download [MSL Notifier](https://github.com/jonnaStrongNobodyCanTouchMe/msl-titan-notification/releases/tag/MSL)  
    Place it anywhere.
-4. iOS: Download QPush App. (https://apps.apple.com/us/app/qpush-push-text-links-from/id776837597)  
-   Android: available soon
+4. iOS: Download QPush App. [Link](https://apps.apple.com/us/app/qpush-push-text-links-from/id776837597)  
+   Android: Download Pushbullet App. [Link](https://play.google.com/store/apps/details?id=com.pushbullet.android&referrer=utm_source%3Dpushbullet.com)
 
 ### But Why QPush App for iOS?
 
-The biggest reason is It available for iOS. And it's free.
+The biggest reason is it available for iOS. And it's free.
 
 ## How To Use
 
@@ -36,7 +36,12 @@ At first, You have to select nox player. and here are some options.
   5.. Enter your Push Name and Push Code from QPush App.  
   6.. If you want to know it works, click 'send test message'. so you will get a test message on your phone.
   ##### For Android
-  1.soon
+  1.. Go https://www.pushbullet.com/ and sign in with google email.
+  2.. Go https://www.pushbullet.com/#settings -> Account Tab then you can see 'Create Access Token' button.
+  3.. Click 'Create Access Token' button
+  4.. Open MSL Notifier and click 'Push Settings' button.
+  5.. Enter your Pushbullet Access Token.
+  6.. If you want to know it works, click 'send test message'. so you will get a test message on your phone.
 
 ### Clan Tab
 
