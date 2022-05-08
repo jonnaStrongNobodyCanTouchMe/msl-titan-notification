@@ -28,14 +28,14 @@ At first, You have to select nox player. and here are some options.
 - play sound: If checked, plays notification sound on your pc.
 - receive notification via app: Before you check, click 'Push Settings' button then fill out the fields.
   #### Push Settings
-  ##### iOS
-  1.Open QPush App on your phone.  
-  2.Get your Push Name. (You don't need to confirm email. just skip it.)  
-  3.Go Settings then you can see your Push Name and Push Code.  
-  4.Open MSL Notifier and click 'Push Settings' button.  
-  5.Enter your Push Name and Push Code from QPush App.  
-  6.If you want to know it works, click 'send test message'. so you will get a test message on your phone.
-  ##### Android
+  ##### For iOS
+  1.. Open QPush App on your phone.  
+  2.. Get your Push Name. (You don't need to confirm email. just skip it.)  
+  3.. Go Settings then you can see your Push Name and Push Code.  
+  4.. Open MSL Notifier and click 'Push Settings' button.  
+  5.. Enter your Push Name and Push Code from QPush App.  
+  6.. If you want to know it works, click 'send test message'. so you will get a test message on your phone.
+  ##### For Android
   1.soon
 
 ### Clan Tab
