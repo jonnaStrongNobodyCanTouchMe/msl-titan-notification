@@ -1,0 +1,42 @@
+# msl-titan-notification
+
+CMON IT'S LOW HP! SOMEBODY KILL THAT TITAN PLZz
+
+## Getting Started
+
+1. Download Nox Player (https://bignox.com/)  
+   Recommended 7.0.1.1 version and above
+2. Configuring Nox Player Settings  
+   width:800 height:500 DPI:160  
+   Disable ASTC Texture
+3. Download msl-titan-notification  
+   Place it anywhere.
+4. iOS: Download QPush App. (https://apps.apple.com/us/app/qpush-push-text-links-from/id776837597)  
+   Android: available soon
+
+### But Why QPush App for iOS?
+
+The biggest reason is It available for iOS.
+And it's free.
+
+## How To Use
+
+### Settings Tab
+
+At first, You have to select nox player. and here are some options.
+
+- Always On Top: If checked, allows MSL Notifier window to the top of your screen.
+- play sound: If checked, plays notification sound on your pc.
+- receive notification via app: Before you check, click 'Push Settings' button then fill out the fields.
+
+### Clan Tab
+
+Select titan element you want to receive notification and click 'Set' button.  
+Options
+
+- pop message when: This is just an alarm for PC. you can enter like 1630, it will notify you at 16:30.
+
+## Notice
+
+1. **DO NOT MINIMIZE Nox Player AND MSL Notifer.**
+2. **ENJOY YOURSELF**
