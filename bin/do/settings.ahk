@@ -48,20 +48,29 @@ _onFocus_refreshTitle(ctrl, info:="") {
 }
 
 _onClick_openQpushSettings(_ctrlObj, info:="") {
-    qpForm.Show("x521 y355 h90 w200")
+    qpForm.Show("x521 y355 h140 w286")
 }
 
 _onClick_togglePlaySound(_ctrlObj, info:="") {
     IniWrite _ctrlObj.Value, "settings.ini", "Notification", "ENABLE_SOUND"
 }
 
-_onClick_toggleQPush(_ctrlObj, info:="") {
-    user := QPush_getUserInfo()
-    if (user.name = "" || user.code = "") {
-        MsgBox("Go QPush Settings then enter the inputs first.", "Error", "IconX")
-        _ctrlObj.Value := 0
+_onClick_togglePush(_ctrlObj, info:="") {
+    if (IniRead(PUSH_INI, "Device", "OS")) {
+        ; android
+        if (_isBlank("android")) {
+            MsgBox("Go Push Settings then enter the inputs first.", "Error", "IconX")
+            _ctrlObj.Value := 0
+        }
+    } else {
+        ; ios
+        if (_isBlank("ios")) {
+            MsgBox("Go Push Settings then enter the inputs first.", "Error", "IconX")
+            _ctrlObj.Value := 0
+        }
     }
-    IniWrite _ctrlObj.Value, "settings.ini", "Notification", "ENABLE_QPUSH"
+    
+    IniWrite _ctrlObj.Value, "settings.ini", "Notification", "ENABLE_PUSH"
 }
 
 _typeTextEffect(guiObj, str, term:=50) {
@@ -78,5 +87,15 @@ _typeTextEffect(guiObj, str, term:=50) {
         } else {
             guiObj.Text := res
         }
+    }
+}
+
+_isBlank(os) {
+    if (os = "android") {
+        token := Pushbullet_getToken()
+        return token = "" ? true : false
+    } else if (os = "ios") {
+        user := QPush_getUserInfo()
+        return (user.name = "" || user.code = "") ? true : false
     }
 }

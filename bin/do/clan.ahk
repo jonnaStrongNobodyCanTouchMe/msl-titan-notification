@@ -70,7 +70,7 @@ _onClick_startClanAlarm(_ctrlObj, info:="") {
         Bxt_updateStatus(_ctrlObj, "ERROR")
         return false
     } else if (result < 0) {
-        msg := "ERROR: titan element not found. `nYou need to update images."
+        msg := "ERROR: titan element not found. You need to update images."
         Clan_sendMessage(_ctrlObj, msg)
         Bxt_updateStatus(_ctrlObj, msg)
         return false
@@ -119,7 +119,17 @@ Clan_playSound(_ctrlObj) {
 }
 
 Clan_sendMessage(_ctrlObj, msg:="") {
-    if (_ctrlObj.Gui['CB_qpush'].Value) {
+    if (!_ctrlObj.Gui['CB_push'].Value) {
+        return
+    }
+    currentOS := IniRead(PUSH_INI, "Device", "OS") ? "android" : "ios"
+
+    if (currentOS = "android") {
+        req := Pushbullet_send(Pushbullet_getToken(), msg)
+
+        Bxt_updateStatus(_ctrlObj, "result: " req.result " , status: " req.status)
+        return
+    } else if (currentOS = "ios") {
         qpUser := QPush_getUserInfo()
         req := QPush_send(qpUser.name, qpUser.code, msg)
 

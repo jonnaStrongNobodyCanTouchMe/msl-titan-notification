@@ -19,7 +19,7 @@ QPush_send(qpName:="", qpCode:="", msg:="") {
 
 QPush_getUserInfo() {
 	user := {}
-  user.name := IniRead(QPUSH_INI, "Authorization", "PUSH_NAME")
-  user.code := IniRead(QPUSH_INI, "Authorization", "PUSH_CODE")
+  user.name := IniRead(PUSH_INI, "QPush", "PUSH_NAME")
+  user.code := IniRead(PUSH_INI, "QPush", "PUSH_CODE")
 	return user
 }

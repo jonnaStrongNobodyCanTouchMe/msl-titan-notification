@@ -1,5 +1,5 @@
-﻿#Include form_qpush.ahk
-global CURRENT_VERSION := "0.0.1"
+﻿#Include form_push.ahk
+global CURRENT_VERSION := "0.1.0"
 global NOX_CLASS_NAME := "Qt5QWindowIcon"
 global MENU_ICON_DIR := A_ScriptDir . "\bin\gui\icon.ico"
 global WIN_TITLE_ARR := _getWindowTitles()
@@ -36,9 +36,9 @@ form.Add("Checkbox", "x100 y82 w80 h15 vCB_playsound", "play sound").SetFont("s8
 ControlSetChecked IniRead("settings.ini", "Notification", "ENABLE_SOUND"), form['CB_playsound']
 form['CB_playsound'].OnEvent("Click", "_onClick_togglePlaySound")
 form.Add("Checkbox", "x205 y82 w95 h15 vCB_alwaysOnTop", "Always on Top").SetFont("s8")
-form.Add("Checkbox", "x100 y102 w230 h15 vCB_qpush" , "receive notificaition via QPush").SetFont("s8")
-ControlSetChecked IniRead("settings.ini", "Notification", "ENABLE_QPUSH"), form['CB_qpush']
-form['CB_qpush'].OnEvent("Click", "_onClick_toggleQPush")
+form.Add("Checkbox", "x100 y102 w200 h15 vCB_push" , "receive notificaition from App").SetFont("s8")
+ControlSetChecked IniRead("settings.ini", "Notification", "ENABLE_PUSH"), form['CB_push']
+form['CB_push'].OnEvent("Click", "_onClick_togglePush")
 form.Add("Button", "x13 y80 w80 h40 vBTN_qpush", "Push Settings").SetFont("s8")
 form['BTN_qpush'].OnEvent("Click", "_onClick_openQpushSettings")
 form['CB_alwaysOnTop'].OnEvent("Click", (*) => WinSetAlwaysOnTop(-1))
