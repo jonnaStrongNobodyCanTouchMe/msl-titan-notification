@@ -1,6 +1,6 @@
 # msl-titan-notification
 
-CMON IT'S LOW HP! SOMEBODY KILL THAT TITAN PLZz
+I love MSL
 
 ## Getting Started
 
