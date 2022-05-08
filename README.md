@@ -26,7 +26,7 @@ At first, You have to select nox player. and here are some options.
 
 - Always On Top: If checked, allows MSL Notifier window to the top of your screen.
 - play sound: If checked, plays notification sound on your pc.
-- receive notification via app: Before you check, click 'Push Settings' button then fill out the fields.
+- receive notification from app: Before you check, click 'Push Settings' button then fill out the fields.
   #### Push Settings
   ##### For iOS
   1.. Open QPush App on your phone.  
@@ -36,11 +36,11 @@ At first, You have to select nox player. and here are some options.
   5.. Enter your Push Name and Push Code from QPush App.  
   6.. If you want to know it works, click 'send test message'. so you will get a test message on your phone.
   ##### For Android
-  1.. Go https://www.pushbullet.com/ and sign in with google email.
-  2.. Go https://www.pushbullet.com/#settings -> Account Tab then you can see 'Create Access Token' button.
-  3.. Click 'Create Access Token' button
-  4.. Open MSL Notifier and click 'Push Settings' button.
-  5.. Enter your Pushbullet Access Token.
+  1.. Go https://www.pushbullet.com/ and sign in with google email.  
+  2.. Go https://www.pushbullet.com/#settings -> Account Tab then you can see 'Create Access Token' button.  
+  3.. Click 'Create Access Token' button.  
+  4.. Open MSL Notifier and click 'Push Settings' button.  
+  5.. Enter your Pushbullet Access Token.  
   6.. If you want to know it works, click 'send test message'. so you will get a test message on your phone.
 
 ### Clan Tab
