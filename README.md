@@ -9,7 +9,7 @@ I love MSL
 2. Configuring Nox Player Settings  
    width:800 height:500 DPI:160  
    Disable ASTC Texture
-3. Download msl-titan-notification  
+3. Download msl-titan-notification [Here](https://github.com/jonnaStrongNobodyCanTouchMe/msl-titan-notification/releases/tag/MSL)
    Place it anywhere.
 4. iOS: Download QPush App. (https://apps.apple.com/us/app/qpush-push-text-links-from/id776837597)  
    Android: available soon
